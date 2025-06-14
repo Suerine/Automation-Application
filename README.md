@@ -30,27 +30,27 @@ github: suerineogaja@gmail.com
 # Project Timeline
 Planning & Design
 
-Define core features and MVP scope
+- Define core features and MVP scope
 
-Create wireframes, UI mockups, and system architecture
+- Create wireframes, UI mockups, and system architecture
 
 Core Development (Phase 1)
 
-Build automation engine
+- Build automation engine
 
-Develop base UI for task automation and file management
+- Develop base UI for task automation and file management
 
 Development (Phase 2) & Testing
 
-Add scheduling, data entry features
+- Add scheduling, data entry features
 
-Conduct internal and external user testing
+- Conduct internal and external user testing
 
-Finalization & Launch
+- Finalization & Launch
 
-Refine UI, implement subscriptions
+- Refine UI, implement subscriptions
 
-Launch MVP, start marketing and onboarding
+- Launch MVP, start marketing and onboarding
 
 # Link to Project Board
 https://github.com/users/Suerine/projects/2
