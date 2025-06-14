@@ -46,7 +46,7 @@ Development (Phase 2) & Testing
 
 - Conduct internal and external user testing
 
-- Finalization & Launch
+Finalization & Launch
 
 - Refine UI, implement subscriptions
 
