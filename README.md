@@ -53,3 +53,4 @@ Refine UI, implement subscriptions
 Launch MVP, start marketing and onboarding
 
 # Link to Project Board
+https://github.com/users/Suerine/projects/2
