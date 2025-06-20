@@ -62,21 +62,17 @@ DeskFlow will:
 - Store user data locally with options for future cloud sync.
 
 # 5. Functional Requirements
-| Header 1 | Header 2 | Header 3 |
-|---|---|---|
-| Cell 1 | Cell 2 | Cell 3 |
-| Cell 4 | Cell 5 | Cell 6 |
 
-ID	Description	Rationale	Acceptance Criteria
-FR-01	The system shall track active screen time per app/website	Enables users to monitor workflow and productivity	User sees daily, weekly, and monthly time reports
-FR-02	The system shall generate productivity reports based on usage patterns	Helps users identify time-wasting activities	Reports show categorized time spent with suggestions for improvement
-FR-03	The system shall allow users to organize files into folders by name, date, subject	Simplifies file organization	Files are automatically moved to designated folders based on rules
-FR-04	The system shall provide task scheduling for routine actions (emails, cleanups, log rotation)	Automates repetitive tasks	Users can create, edit, and execute scheduled tasks successfully
-FR-05	The system shall provide a GUI that allows non-technical users to set up automation	Addresses learning curve concerns	Users can complete setup and configuration without using terminal commands
-FR-06	The system shall allow users to customize which folders and file types to include in file organization rules	Ensures user control and flexibility	Users can easily configure organization preferences through GUI
-FR-07	The system shall store data locally by default	Addresses privacy and security concerns	No data is sent to external servers by default
-FR-08	The system shall allow users to export reports and logs	Enables data sharing and analysis	Reports can be exported in common formats (PDF, CSV)
-
+| ID | Description | Rationale | Acceptance Criteria |
+|---|---|---|---|
+| FR-01 | The system shall track active screen time per app/website | Enables users to monitor workflow and productivity | User sees daily, weekly, and monthly time reports |
+| FR-02 | The system shall generate productivity reports based on usage patterns | Helps users identify time-wasting activities | Reports show categorized time spent with suggestions for improvement |
+| FR-03 | The system shall allow users to organize files into folders by name, date, subject | Simplifies file organization | Files are automatically moved to designated folders based on rules |
+| FR-04 | The system shall provide task scheduling for routine actions (emails, cleanups, log rotation) | Automates repetitive tasks | Users can create, edit, and execute scheduled tasks successfully |
+| FR-05 | The system shall provide a GUI that allows non-technical users to set up automation | Addresses learning curve concerns | Users can complete setup and configuration without using terminal commands |
+| FR-06 | The system shall allow users to customize which folders and file types to include in file organization rules | Ensures user control and flexibility | Users can easily configure organization preferences through GUI |
+| FR-07 | The system shall store data locally by default | Addresses privacy and security concerns | No data is sent to external servers by default |
+| FR-08 | The system shall allow users to export reports and logs | Enables data sharing and analysis | Reports can be exported in common formats (PDF, CSV) |
 6. Non-Functional Requirements
 ID	Category	Description	Acceptance Criteria
 NFR-01	Performance	System shall load main interface within 2 seconds	Application opens and becomes usable within 2 seconds
