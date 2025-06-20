@@ -26,41 +26,40 @@ This document defines the functional and non-functional requirements for DeskFlo
 - Data Privacy Consultant	Ensures compliance with privacy and security standards
 - Testers / Beta Users	Provide feedback during development
 
-3. Data Collection Summary
-Primary Research:
+# 3. Data Collection Summary
+### Primary Research:
+- Online survey (50 respondents).
 
-Online survey (50 respondents).
+- Focus group (6 university students).
 
-Focus group (6 university students).
+### Key Findings:
 
-Key Findings:
+- 65.3% of users spend 7–12+ hours/day on laptops.
 
-65.3% of users spend 7–12+ hours/day on laptops.
+- Top pain points: digital disorganization, distraction management, time tracking.
 
-Top pain points: digital disorganization, distraction management, time tracking.
+- Most desired feature: work hours monitoring (43 respondents prioritized this).
 
-Most desired feature: work hours monitoring (43 respondents prioritized this).
+- Secondary features: file organization, task scheduling.
 
-Secondary features: file organization, task scheduling.
+- Concerns: privacy/security, cost, ease of use.
 
-Concerns: privacy/security, cost, ease of use.
+### Secondary Research:
 
-Secondary Research:
+- Existing solutions (RescueTime, Zapier, IFTTT, Trello) do not fully cover DeskFlow’s proposed feature set.
 
-Existing solutions (RescueTime, Zapier, IFTTT, Trello) do not fully cover DeskFlow’s proposed feature set.
-
-4. System Overview
+# 4. System Overview
 DeskFlow will:
 
-Track work hours and provide time-spent reports on apps/websites.
+- Track work hours and provide time-spent reports on apps/websites.
 
-Organize files automatically into folders based on predefined rules.
+- Organize files automatically into folders based on predefined rules.
 
-Schedule repetitive tasks such as email reminders, disk cleanups, and file rotations.
+- Schedule repetitive tasks such as email reminders, disk cleanups, and file rotations.
 
-Provide a simple graphical user interface (GUI) to ensure accessibility for non-technical users.
+- Provide a simple graphical user interface (GUI) to ensure accessibility for non-technical users.
 
-Store user data locally with options for future cloud sync.
+- Store user data locally with options for future cloud sync.
 
 5. Functional Requirements
 ID	Description	Rationale	Acceptance Criteria
