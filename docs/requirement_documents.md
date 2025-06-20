@@ -1,5 +1,6 @@
-DeskFlow Requirements Document1. Introduction
-1.1 Project Overview
+# DeskFlow Requirements Document
+# 1. Introduction
+## 1.1 Project Overview
 DeskFlow is a cross-platform desktop automation application designed to boost user productivity by eliminating repetitive digital tasks. It provides automation for file organization, workflow tracking, and task scheduling, enabling users to better manage their digital workspace and optimize their time.
 
 1.2 Purpose
