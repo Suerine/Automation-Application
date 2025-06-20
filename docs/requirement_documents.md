@@ -3,28 +3,28 @@
 ## 1.1 Project Overview
 DeskFlow is a cross-platform desktop automation application designed to boost user productivity by eliminating repetitive digital tasks. It provides automation for file organization, workflow tracking, and task scheduling, enabling users to better manage their digital workspace and optimize their time.
 
-1.2 Purpose
+## 1.2 Purpose
 This document defines the functional and non-functional requirements for DeskFlow, based on user research gathered through surveys and focus groups. It serves as a reference for development, ensuring that all user needs, technical specifications, and business goals are clearly defined before implementation begins.
 
-1.3 Scope
-Desktop application for Windows and macOS.
+## 1.3 Scope
+- Desktop application for Windows and macOS.
 
-Targets individual users: students, freelancers, and professionals.
+- Targets individual users: students, freelancers, and professionals.
 
-Provides workflow tracking, file organization, and task scheduling features.
+- Provides workflow tracking, file organization, and task scheduling features.
 
-Stores data locally with potential future cloud expansion.
+- Stores data locally with potential future cloud expansion.
 
-Intuitive, user-friendly interface with minimal technical barriers.
+- Intuitive, user-friendly interface with minimal technical barriers.
 
-2. Stakeholder Identification
-Stakeholder	Role
-Founder / Product Owner	Project vision and direction
-End Users	Students, freelancers, professionals
-Development Team	Software engineers, designers
-UX/UI Designer	Responsible for intuitive interface design
-Data Privacy Consultant	Ensures compliance with privacy and security standards
-Testers / Beta Users	Provide feedback during development
+# 2. Stakeholder Identification
+- Stakeholder	Role
+- Founder / Product Owner	Project vision and direction
+- End Users	Students, freelancers, professionals
+- Development Team	Software engineers, designers
+- UX/UI Designer	Responsible for intuitive interface design
+- Data Privacy Consultant	Ensures compliance with privacy and security standards
+- Testers / Beta Users	Provide feedback during development
 
 3. Data Collection Summary
 Primary Research:
