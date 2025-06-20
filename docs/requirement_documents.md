@@ -74,13 +74,14 @@ DeskFlow will:
 | FR-07 | The system shall store data locally by default | Addresses privacy and security concerns | No data is sent to external servers by default |
 | FR-08 | The system shall allow users to export reports and logs | Enables data sharing and analysis | Reports can be exported in common formats (PDF, CSV) |
 6. Non-Functional Requirements
-ID	Category	Description	Acceptance Criteria
-NFR-01	Performance	System shall load main interface within 2 seconds	Application opens and becomes usable within 2 seconds
-NFR-02	Scalability	System should be able to process tracking data for up to 12 hours/day of active use	No performance degradation for heavy daily usage
-NFR-03	Security	All local data shall be encrypted at rest and protected by user authentication	Local data remains encrypted; user login required to access sensitive reports
-NFR-04	Usability	The interface shall be designed for users with no technical background	At least 90% of beta testers rate usability as easy or very easy
-NFR-05	Availability	System shall maintain 99.9% uptime during active user sessions	The app remains responsive and stable during continuous use
-NFR-06	Privacy	User data shall not be shared or sold; privacy policy available at onboarding	Privacy policy accessible and acknowledged by user on setup
+| ID | Category | Description | Acceptance Criteria |
+|---|---|---|---|
+| NFR-01 | Performance | System shall load main interface within 2 seconds | Application opens and becomes usable within 2 seconds |
+| NFR-02 | Scalability | System should be able to process tracking data for up to 12 hours/day of active use | No performance degradation for heavy daily usage |
+| NFR-03 | Security | All local data shall be encrypted at rest and protected by user authentication | Local data remains encrypted; user login required to access sensitive reports |
+| NFR-04 | Usability | The interface shall be designed for users with no technical background | At least 90% of beta testers rate usability as easy or very easy |
+| NFR-05 | Availability | System shall maintain 99.9% uptime during active user sessions | The app remains responsive and stable during continuous use |
+| NFR-06 | Privacy | User data shall not be shared or sold; privacy policy available at onboarding | Privacy policy accessible and acknowledged by user on setup |
 
 7. Assumptions and Constraints
 Assumptions:
