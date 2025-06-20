@@ -63,6 +63,10 @@ DeskFlow will:
 
 # 5. Functional Requirements
 | Header 1 | Header 2 | Header 3 |
+|---|---|---|
+| Cell 1 | Cell 2 | Cell 3 |
+| Cell 4 | Cell 5 | Cell 6 |
+
 ID	Description	Rationale	Acceptance Criteria
 FR-01	The system shall track active screen time per app/website	Enables users to monitor workflow and productivity	User sees daily, weekly, and monthly time reports
 FR-02	The system shall generate productivity reports based on usage patterns	Helps users identify time-wasting activities	Reports show categorized time spent with suggestions for improvement
