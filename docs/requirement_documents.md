@@ -73,7 +73,8 @@ DeskFlow will:
 | FR-06 | The system shall allow users to customize which folders and file types to include in file organization rules | Ensures user control and flexibility | Users can easily configure organization preferences through GUI |
 | FR-07 | The system shall store data locally by default | Addresses privacy and security concerns | No data is sent to external servers by default |
 | FR-08 | The system shall allow users to export reports and logs | Enables data sharing and analysis | Reports can be exported in common formats (PDF, CSV) |
-6. Non-Functional Requirements
+# 6. Non-Functional Requirements
+
 | ID | Category | Description | Acceptance Criteria |
 |---|---|---|---|
 | NFR-01 | Performance | System shall load main interface within 2 seconds | Application opens and becomes usable within 2 seconds |
@@ -83,33 +84,33 @@ DeskFlow will:
 | NFR-05 | Availability | System shall maintain 99.9% uptime during active user sessions | The app remains responsive and stable during continuous use |
 | NFR-06 | Privacy | User data shall not be shared or sold; privacy policy available at onboarding | Privacy policy accessible and acknowledged by user on setup |
 
-7. Assumptions and Constraints
-Assumptions:
+# 7. Assumptions and Constraints
+### Assumptions:
 
-Users have administrative rights on their device to allow installation.
+- Users have administrative rights on their device to allow installation.
 
-Python-based architecture can access system-level file management APIs on both Windows and macOS.
+- Python-based architecture can access system-level file management APIs on both Windows and macOS.
 
-Users have basic knowledge of file systems and task scheduling needs.
+- Users have basic knowledge of file systems and task scheduling needs.
 
-Constraints:
+### Constraints:
 
-Cloud features are excluded from initial MVP release.
+- Cloud features are excluded from initial MVP release.
 
-Initial support for English language only.
+- Initial support for English language only.
 
-Mac notarization and Windows signing processes must be followed for app distribution.
+- Mac notarization and Windows signing processes must be followed for app distribution.
 
-8. Acceptance Criteria
-The application will be considered acceptable for release when:
+# 8. Acceptance Criteria
+- The application will be considered acceptable for release when:
 
-All functional requirements (FR-01 to FR-08) are fully implemented and tested.
+- All functional requirements (FR-01 to FR-08) are fully implemented and tested.
 
-All non-functional requirements meet or exceed defined thresholds.
+- All non-functional requirements meet or exceed defined thresholds.
 
-Privacy and security requirements are reviewed by a data privacy consultant.
+- Privacy and security requirements are reviewed by a data privacy consultant.
 
-Usability tests confirm non-technical users can successfully use the core features.
+- Usability tests confirm non-technical users can successfully use the core features.
 
-Feedback from beta testers is positive regarding usefulness and ease of use.
+- Feedback from beta testers is positive regarding usefulness and ease of use.
 
