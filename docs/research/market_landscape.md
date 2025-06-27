@@ -44,7 +44,7 @@ Growing digital fatigue among remote workers presents a clear need for productiv
 
 Demand for AI-enriched personal assistants: users want lightweight automation that respects privacy and doesn’t require coding or subscriptions to enterprise RPA.
 
-### 📊 Visual Slide for Pitch Deck
+### 📊 Visual of Competitor landscape
 
 ![DeskFlow 2x2 Matrix](/docs/research/DeskFlow%202x2%20matrix.png)
 
