@@ -1,84 +1,58 @@
-Market Segments (Where DeskFlow Fits In)
-Desktop Automation Tools – automate file handling, local app actions
+# Market Landscape
+## Market Segments (Where DeskFlow Fits In)
+- Desktop Automation Tools – automate file handling, local app actions
 
-Productivity & Time-Tracking Software – eg. RescueTime, Focus@Will
+- Productivity & Time-Tracking Software – eg. RescueTime, Focus@Will
 
-Task Scheduling & Workflow Tools – Zapier, IFTTT, Windows Task Scheduler
+- Task Scheduling & Workflow Tools – Zapier, IFTTT, Windows Task Scheduler
 
-Remote Work Assistants – AI-driven tools for remote productivity
+- Remote Work Assistants – AI-driven tools for remote productivity
 
-2️⃣ Key Competitors
-Competitor Category Strengths Gaps vs. DeskFlow
-RescueTime Time tracking Detailed reports, behavioral insights No file org or task scheduling
-Zapier / IFTTT Cloud workflow automation Massive integration list, web-based Can't automate desktop actions
-Windows Task Scheduler / Automator Native automation Powerful built-in options Technical, limited UI, not cross-platform
-UiPath Enterprise RPA Highly customizable, AI integrations Too complex and costly for individuals
-TeamViewer / CoPilot Remote support/AI Strong remote, AI features Focused on remote support; not personal automation
+# Key Competitors
+| Competitor                        | Category                  | Strengths                                     | Gaps vs. DeskFlow                                     |
+|----------------------------------|---------------------------|-----------------------------------------------|--------------------------------------------------------|
+| RescueTime                       | Time tracking             | Detailed reports, behavioral insights         | No file org or task scheduling                         |
+| Zapier / IFTTT                   | Cloud workflow automation | Massive integration list, web-based           | Can't automate desktop actions                         |
+| Windows Task Scheduler / Automator | Native automation        | Powerful built-in options                     | Technical, limited UI, not cross-platform              |
+| UiPath                           | Enterprise RPA            | Highly customizable, AI integrations          | Too complex and costly for individuals                 |
+| TeamViewer / CoPilot             | Remote support / AI       | Strong remote, AI features                    | Focused on remote support; not personal automation     |
 
-3️⃣ Market Trends & Growth Drivers
-📈 Rise in remote and hybrid work has increased demand for desktop tools that reduce digital overwhelm and fight “infinite workday” burnout
-paymoapp.com
-+4
-reddit.com
-+4
-iconicworkspaces.com
-+4
-the-legends-agency.com
-paymoapp.com
-psico-smart.com
-en.wikipedia.org
-+5
-timechamp.io
-+5
-reddit.com
-+5
-news.com.au
-+1
-globenewswire.com
-+1
-askaispace.com
-+1
-kiplinger.com
-+1
-vox.com
-market.us
-+1
-psico-smart.com
-+1
-.
 
-Gen Z and Millennials increasingly want AI and automation to handle repetitive tasks — 62% of workers favor AI for emails/data entry
-nypost.com
-.
+## Market Trends & Growth Drivers
+📈 Rise in remote and hybrid work has increased demand for desktop tools that reduce digital overwhelm and fight “infinite workday” burnout.
 
-AI + Automation is a rapidly expanding segment, with AI in remote work projected to reach ~$104B by 2033
-market.us
-.
 
-Demand for user-friendly, low-code/no-code tools is increasing as digital skill gaps hinder some from leveraging current tech .
+Gen Z and Millennials increasingly want AI and automation to handle repetitive tasks — 62% of workers favor AI for emails/data entry.
 
-4️⃣ Gaps & Opportunities
+
+AI + Automation is a rapidly expanding segment, with AI in remote work projected to reach ~$104B by 2033.
+
+
+Demand for user-friendly, low-code/no-code tools is increasing as digital skill gaps hinder some from leveraging current tech.
+
+Global Productivity Software Market is projected at US **$81.17 billion in 2025**, **growing to ≈US $89.39 billion by 2030**, with a CAGR of ~1.95% 
+
+Kenya’s Productivity Software Market will reach **US $35.87 million in 2025, expanding at ~4.13% CAGR to US $42.18 million by 2029 **
+
+Demand is driven by remote work, digital overwhelm, and rising interest in automation & AI tools
+
+## Gaps & Opportunities
 Lack of a unified, desktop-first tool: current solutions either focus on time tracking, scheduling, or cloud-QA, but none combine both desktop automation and ease-of-use.
 
 Growing digital fatigue among remote workers presents a clear need for productivity tools that reduce context-switching and digital clutter.
 
 Demand for AI-enriched personal assistants: users want lightweight automation that respects privacy and doesn’t require coding or subscriptions to enterprise RPA.
 
-📊 Visual Slide Suggestion for Pitch Deck
-2x2 Matrix:
+### 📊 Visual Slide for Pitch Deck
 
-X-axis: Complexity (User-friendly → Enterprise)
 
-Y-axis: Scope (Desktop → Web)
 
-Position DeskFlow in the “User-friendly Desktop Automation” quadrant among lightweight tools — distinct from both enterprise RPA and web-first automation.
+### 📈 Why DeskFlow Stands Out:
 
-📈 Why DeskFlow Stands Out:
+- Cross-platform desktop-first focus
 
-Cross-platform desktop-first focus
+- Combines time tracking, file organization, and scheduled automation in one intuitive package
 
-Combines time tracking, file organization, and scheduled automation in one intuitive package
+- Targets growing segments: remote workers, students, freelancers
 
-Targets growing segments: remote workers, students, freelancers
-
-Designed to scale from personal use to enterprise with added team and AI capabilities
+- Designed to scale from personal use to enterprise with added team and AI capabilities
