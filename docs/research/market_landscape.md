@@ -32,7 +32,7 @@ Demand for user-friendly, low-code/no-code tools is increasing as digital skill 
 
 Global Productivity Software Market is projected at US **$81.17 billion in 2025**, **growing to ≈US $89.39 billion by 2030**, with a CAGR of ~1.95% 
 
-Kenya’s Productivity Software Market will reach **US $35.87 million in 2025, expanding at ~4.13% CAGR to US $42.18 million by 2029 **
+Kenya’s Productivity Software Market will reach **US $35.87 million in 2025, expanding at ~4.13% CAGR to US $42.18 million by 2029**
 
 Demand is driven by remote work, digital overwhelm, and rising interest in automation & AI tools
 
