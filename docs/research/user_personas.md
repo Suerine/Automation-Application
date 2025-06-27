@@ -39,7 +39,7 @@ follow-ups
 - Centralize access to important client folders.
 - Automate repetitive file renaming and formatting tasks.
   
-## Persona 4: Aisha — The Overwhelmed First-Year Student
+## Persona 3: Aisha — The Overwhelmed First-Year Student
 - Age: 19
 - Profession: First-Year Business Administration Student
 - Tech Proficiency: Low
