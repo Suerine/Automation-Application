@@ -46,7 +46,8 @@ Demand for AI-enriched personal assistants: users want lightweight automation th
 
 ### 📊 Visual Slide for Pitch Deck
 
-! (/research/DeskFlow 2x2 matrix.png)
+![DeskFlow 2x2 Matrix](/docs/research/DeskFlow%202x2%20matrix.png)
+
 
 ### 📈 Why DeskFlow Stands Out:
 
