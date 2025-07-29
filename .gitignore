@@ -1,0 +1,66 @@
+# Node modules
+node_modules/
+
+# Build output
+/dist/
+/build/
+/out/
+/release/
+
+# Mac system files
+.DS_Store
+
+# VSCode settings
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage and testing
+/coverage/
+*.lcov
+
+# Electron cache
+.cache/
+*.asar
+
+# Environment files
+.env
+.env.*
+
+# Installer artifacts
+*.dmg
+*.exe
+*.msi
+*.deb
+*.AppImage
+
+# Optional: ignore TypeScript build outputs
+*.tsbuildinfo
+
+# Binaries (for safety, avoid committing them)
+*.bin
+*.dll
+*.so
+*.node
+
+# OS trash
+Thumbs.db
+ehthumbs.db
+
+node_modules/
+node_modules/
+src/node_modules/
+node_modules/
+src/node_modules/
+node_modules/
+src/node_modules/
