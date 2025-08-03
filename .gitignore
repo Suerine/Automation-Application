@@ -64,3 +64,6 @@ node_modules/
 src/node_modules/
 node_modules/
 src/node_modules/
+src/backend/python/credentials.json
+src/backend/python/token.json
+src/token.json
