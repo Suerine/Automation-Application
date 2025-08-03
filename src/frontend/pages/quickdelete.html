@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ✅ Updated CSP: allow fonts -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self' https://unpkg.com https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net; script-src 'self'"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles/quickdelete.css" />
+
+    <!-- ✅ Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <title>Desk Flow - Automation Application</title>
+  </head>
+  <body>
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="../images/DeskFlow-Logo2.png" alt="logo" />
+          </span>
+
+          <div class="text header-text">
+            <span class="name">Automation App</span>
+          </div>
+        </div>
+
+        <i class="bi bi-chevron-right toggle"></i>
+      </header>
+      
+      <div class="menu-bar">
+       <div class="menu">
+         <h2 class="title nav-text">AUTOMATE</h2>
+        <ul class="menu-links">
+         <li class="nav-link">
+          <a href="../pages/timetracker.html">
+           <i class="bi bi-stopwatch icon"></i>
+           <span class="text nav-text">Time Tracker</span>
+          </a>
+         </li>
+         <li class="nav-link">
+          <a href="../pages/mailassistant.html">
+           <i class="bi bi-envelope-paper icon"></i>
+           <span class="text nav-text">Mail Assitant</span>
+          </a>
+         </li>
+         <li class="nav-link">
+          <div class="dropdown">
+           <a href="#" id="dropdownBtn" class="text nav-text dropbtn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-magic icon"></i>
+            <span class="text nav-text">Quick Actions</span>
+           </a>
+           <div id="myDropdown" class="dropdown-content">
+             <a href="../pages/quickdelete.html">Quick Delete</a>
+             <a href="../pages/quicksearch.html">Quick Search</a>
+             <a href="../pages/fileorganizer.html">File Organizer</a>
+           </div>
+          </div>
+         </li>
+        </ul>
+       </div>
+       <div class="menu">
+         <h2 class="title nav-text">ANALYZE</h2>
+        <ul class="menu-links">
+         <li class="nav-link">
+          <a href="../pages/home.html">
+           <i class="bi bi-clipboard2-data icon"></i>
+           <span class="text nav-text">Dashboard</span>
+          </a>
+         </li>
+        
+        </ul>
+       </div>
+       <div class="menu">
+         <h2 class="title nav-text">MANAGE</h2>
+        <ul class="menu-links">
+         <li class="nav-link">
+          <a href="../pages/home.html">
+           <i class="bi bi-info-square icon"></i>
+           <span class="text nav-text">Tutorial</span>
+          </a>
+         </li>
+         <li class="nav-link">
+          <a href="../pages/settings.html">
+           <i class="bi bi-gear-wide-connected icon"></i>
+           <span class="text nav-text">Settings</span>
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div .bottom-content>
+         <li class="nav-link">
+          <a href="../pages/settings.html">
+           <i class="bi bi-person-add icon"></i>
+           <span class="text nav-text">Create Account</span>
+          </a>
+         </li>
+
+         <li class="mode">
+          <div class="moon-sun">
+           <i class="bi bi-moon icon moon"></i>
+           <i class="bi bi-brightness-high icon sun"></i>
+          </div>
+          <span class="mode-text text nav-text">Dark Mode</span>
+          <div class="toggle-switch">
+           <span class="switch"></span>
+          </div>
+         </li>
+        </ul>
+       </div>
+    </nav>  
+    <section class="home">
+     <div class="text">Quick Delete</div>
+      <div class="container">
+       <h4>Instantly removes selected files or all large files in one click, helping you free up space with minimal effort.</h4>
+       <div>
+        <button id="selectFolderBtn">
+         <i class="bi bi-folder"></i>
+         Select Folder
+        </button>
+        <span id="selectedPath"></span>
+        <button id="deleteAllBtn" disabled>
+         <i class="bi bi-trash3"></i>
+         Delete All</button>
+        </div>
+       <br />
+       <button id="scanBtn" disabled>
+        <i class="bi bi-binoculars"></i>
+        Scan for Large Files
+       </button>
+       <div id="fileList"></div>
+      </div>
+    </section>
+
+    <script src="../scripts/deleteRenderer.js"></script>
+
+  </body>
+</html>
+
+
+
+
+

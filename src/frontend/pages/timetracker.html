@@ -10,8 +10,11 @@
       content="default-src 'self'; style-src 'self' https://unpkg.com https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net; script-src 'self'"
     />
 
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://unpkg.com https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net; script-src 'self'" />
+
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../styles/home.css" />
+    <link rel="stylesheet" href="../styles/timetracker.css" />
 
     <!-- ✅ Bootstrap Icons -->
     <link
@@ -42,22 +45,29 @@
          <h2 class="title nav-text">AUTOMATE</h2>
         <ul class="menu-links">
          <li class="nav-link">
-          <a href="../pages/home.html">
+          <a href="../pages/timetracker.html">
            <i class="bi bi-stopwatch icon"></i>
            <span class="text nav-text">Time Tracker</span>
           </a>
          </li>
          <li class="nav-link">
-          <a href="../pages/automation.html">
-           <i class="bi bi-folder-check icon"></i>
-           <span class="text nav-text">File Organizer</span>
+          <a href="../pages/mailassistant.html">
+           <i class="bi bi-envelope-paper icon"></i>
+           <span class="text nav-text">Mail Assitant</span>
           </a>
          </li>
          <li class="nav-link">
-          <a href="../pages/settings.html">
-           <i class="bi bi-magic icon"></i>
-           <span class="text nav-text">Quick Actions</span>
-          </a>
+          <div class="dropdown">
+           <a href="#" id="dropdownBtn" class="text nav-text dropbtn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-magic icon"></i>
+            <span class="text nav-text">Quick Actions</span>
+           </a>
+           <div id="myDropdown" class="dropdown-content">
+             <a href="../pages/quickdelete.html">Quick Delete</a>
+             <a href="../pages/quicksearch.html">Quick Search</a>
+             <a href="../pages/fileorganizer.html">File Organizer</a>
+           </div>
+          </div>
          </li>
         </ul>
        </div>
@@ -113,7 +123,7 @@
     </nav> 
 
     <section class="home">
-     <div class="text">Dashboard</div>
+     <div class="text">Time Tracker</div>
     </section>
 
     <script src="../scripts/script.js"></script>
