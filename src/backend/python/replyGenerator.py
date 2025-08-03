@@ -2,10 +2,13 @@ import sys
 import json
 import os
 from openai import OpenAI
+from dotenv import load_dotenv
+
+load_dotenv() 
 
 # Configure AI client
 client = OpenAI(
-    api_key= "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",
+    api_key= os.getenv("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1",
     timeout=20  # 20 second timeout
 )
@@ -54,4 +57,3 @@ if __name__ == '__main__':
         sys.exit(1)
     except Exception as e:
         print(json.dumps({"error": f"Processing error: {str(e)}"}))
-        sys.exit(1)
