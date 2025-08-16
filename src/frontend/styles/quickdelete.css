@@ -409,7 +409,7 @@ span .selectedPath .p{
   padding: 15px;
   background-color: #f9f9f9;
   border-radius: 10px;
-  max-height: 350px;
+  max-height: 65vh;
   overflow-y: auto;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
@@ -563,3 +563,51 @@ body.dark button:hover{
   margin-right: 10px;
 }
 
+.duplicate-groups {
+  width: 100%;
+}
+
+.duplicate-group {
+  margin-bottom: 2rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.group-header {
+  margin-top: 0;
+  color: var(--text-color);
+  font-weight: 300;
+  font-size: 1.1rem;
+  padding-bottom: 0.5rem;
+}
+
+hr {
+ margin-bottom: 10px;
+ font-size: 0.2rem;
+ font-weight: 100;
+}
+
+.group-files {
+  list-style: none;
+  padding-left: 0;
+}
+
+.original-file {
+  background-color: #f8fff8;
+  border-left: 3px solid #4CAF50;
+}
+
+.duplicate-file {
+  background-color: #fff8f8;
+  border-left: 3px solid #F44336;
+}
+
+.original-badge {
+  background-color: #4CAF50;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-left: 8px;
+}

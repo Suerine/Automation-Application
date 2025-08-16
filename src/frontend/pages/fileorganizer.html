@@ -10,8 +10,9 @@
       content="default-src 'self'; style-src 'self' https://unpkg.com https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net; script-src 'self'"
     />
 
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../styles/quickdelete.css" />
+    <link rel="stylesheet" href="../styles/timetracker.css" />
 
     <!-- ✅ Bootstrap Icons -->
     <link
@@ -117,40 +118,41 @@
          </li>
         </ul>
        </div>
-    </nav>  
+    </nav> 
+
     <section class="home">
-     <div class="text">Quick Delete</div>
-      <div class="container">
-       <h4>Instantly removes selected files or all large files in one click, helping you free up space with minimal effort.</h4>
-       <div>
-        <button id="selectFolderBtn">
-         <i class="bi bi-folder"></i>
-         Select Folder
-        </button>
-        <span id="selectedPath"></span>
-        <button id="deleteAllBtn" disabled>
-         <i class="bi bi-trash3"></i>
-         Delete All</button>
-        </div>
-       <br />
-       <button id="scanBtn" disabled>
-        <i class="bi bi-binoculars"></i>
-        Scan for Large Files
-       </button>
-       <button id="scanBtnDuplicate" disabled>
-        <i class="bi bi-binoculars"></i>
-        Scan for Duplicate Files
-       </button>
-       <div id="fileList"></div>
-      </div>
+     <div class="text">File Organizer</div>
+      <label>Mode
+    <select id="mode">
+      <option value="1">1 - Keyword</option>
+      <option value="2">2 - Date</option>
+      <option value="3">3 - Extension</option>
+      <option value="4">4 - Extension + Date</option>
+    </select>
+  </label>
+
+  <div id="inputs">
+    <input id="keyword" placeholder="keyword (mode 1)">
+    <input id="date" placeholder="date (mode 2 & 4) e.g. 'July 2025'">
+    <input id="ext" placeholder="extension (mode 3 & 4) e.g. .pdf">
+    <input id="dest" placeholder="optional destination folder">
+    <input id="base" placeholder="base path to scan (optional)">
+  </div>
+
+  <button id="run">Run Organizer</button>
+
+  <pre id="output" style="white-space: pre-wrap; background:#111; color:#eee; padding:12px; margin-top:8px;"></pre>
+
     </section>
-
-    <script src="../scripts/deleteRenderer.js"></script>
-
+    <script src="../scripts/fileOrganizerRenderer.js"></script>
+    <div id="deleteModal" class="modal">
+     <div class="modal-content">
+       <p>Are you sure you want to delete this task?</p>
+       <div class="modal-actions">
+         <button id="confirmDelete">Yes</button>
+         <button id="cancelDelete">Cancel</button>
+       </div>
+     </div>
+   </div>
   </body>
 </html>
-
-
-
-
-

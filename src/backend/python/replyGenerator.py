@@ -3,8 +3,10 @@ import json
 import os
 from openai import OpenAI
 from dotenv import load_dotenv
+from pathlib import Path
 
-load_dotenv() 
+
+load_dotenv()
 
 # Configure AI client
 client = OpenAI(

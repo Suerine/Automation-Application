@@ -11,7 +11,7 @@
     />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../styles/quickdelete.css" />
+    <link rel="stylesheet" href="../styles/quicksearch.css" />
 
     <!-- ✅ Bootstrap Icons -->
     <link
@@ -119,38 +119,59 @@
        </div>
     </nav>  
     <section class="home">
-     <div class="text">Quick Delete</div>
+     <div class="text">Quick Search</div>
       <div class="container">
        <h4>Instantly removes selected files or all large files in one click, helping you free up space with minimal effort.</h4>
        <div>
-        <button id="selectFolderBtn">
-         <i class="bi bi-folder"></i>
-         Select Folder
-        </button>
-        <span id="selectedPath"></span>
-        <button id="deleteAllBtn" disabled>
-         <i class="bi bi-trash3"></i>
-         Delete All</button>
+       <div class="row">
+        <div class="card">
+          <h3>Profiles</h3>
+          <div id="profiles" class="grid"></div>
+          <div class="row-center">
+            <input id="autoOpenProfiles" type="checkbox" checked />
+            <label for="autoOpenProfiles">Open links in browser</label>
+          </div>
         </div>
-       <br />
-       <button id="scanBtn" disabled>
-        <i class="bi bi-binoculars"></i>
-        Scan for Large Files
-       </button>
-       <button id="scanBtnDuplicate" disabled>
-        <i class="bi bi-binoculars"></i>
-        Scan for Duplicate Files
-       </button>
-       <div id="fileList"></div>
+
+      <div class="card">
+        <h3>Product Search</h3>
+        <input id="productInput" type="text" placeholder="e.g. wireless mouse" />
+        <div class="row-center">
+          <input id="autoOpenProduct" type="checkbox" checked />
+          <label for="autoOpenProduct">Open links in browser</label>
+        </div>
+        <div style="margin-top:8px;">
+          <button id="productBtn">
+           <i class="bi bi-search"></i>
+           Search
+          </button>
+        </div>
+        <div id="productResults" style="margin-top:10px;"></div>
+        <p class="muted">Shows top Jumia results and meta search links.</p>
       </div>
+
+      <div class="card">
+        <h3>Research Search</h3>
+        <input id="researchInput" type="text" placeholder="e.g. solar desalination" />
+        <div class="row-center">
+          <input id="autoOpenResearch" type="checkbox" checked />
+          <label for="autoOpenResearch">Open links in browser</label>
+        </div>
+        <div style="margin-top:8px;">
+          <button id="researchBtn">
+           <i class="bi bi-search"></i>
+           Search
+          </button>
+        </div>
+        <div id="researchResults" style="margin-top:10px;"></div>
+      </div>
+    </div>
+
+    <p class="muted">Tip: You can disable auto-opening and just copy links from results.</p>
+
     </section>
 
-    <script src="../scripts/deleteRenderer.js"></script>
+    <script src="../scripts/quickSearch.js"></script>
 
   </body>
 </html>
-
-
-
-
-

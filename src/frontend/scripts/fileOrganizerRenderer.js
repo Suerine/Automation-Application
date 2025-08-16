@@ -50,3 +50,34 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.getElementById("run").addEventListener("click", async () => {
+  const mode = document.getElementById("mode").value;
+  const payload = {
+    mode: mode,
+    params: {},
+    base_path: document.getElementById("base").value || ".",
+    auto_confirm: true, // run without interactive prompt
+  };
+
+  if (mode === "1")
+    payload.params.keyword = document.getElementById("keyword").value;
+  if (mode === "2") payload.params.date = document.getElementById("date").value;
+  if (mode === "3") payload.params.ext = document.getElementById("ext").value;
+  if (mode === "4") {
+    payload.params.ext = document.getElementById("ext").value;
+    payload.params.date = document.getElementById("date").value;
+  }
+  if (document.getElementById("dest").value)
+    payload.params.dest = document.getElementById("dest").value;
+
+  const out = document.getElementById("output");
+  out.textContent = "Running...";
+
+  try {
+    const result = await window.deskflow.runOrganizer(payload);
+    out.textContent = JSON.stringify(result, null, 2);
+  } catch (err) {
+    out.textContent = "Error: " + JSON.stringify(err, null, 2);
+  }
+});

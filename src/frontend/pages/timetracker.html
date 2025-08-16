@@ -10,8 +10,6 @@
       content="default-src 'self'; style-src 'self' https://unpkg.com https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net; script-src 'self'"
     />
 
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://unpkg.com https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net; script-src 'self'" />
-
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../styles/timetracker.css" />
@@ -124,8 +122,32 @@
 
     <section class="home">
      <div class="text">Time Tracker</div>
-    </section>
+     <div class="time-container">
+       <header>
+        <h1></h1>
+       </header>
+       <form id="task-form">
+        <input type="text" name="task-input" id="task-input" placeholder="What are you working on?" />
+        <input type="submit" id="task-submit" value="+ Add Task" class="task-submit"/>
+      </form>
+       <section class="task-list">
+        <h2>Pending Tasks</h2>
+        <div id="tasks" class="tasks"></div>
+        <h2>Completed Tasks</h2>
+        <div class="complete-tasks" id="complete-tasks"></div>
 
-    <script src="../scripts/script.js"></script>
+      </section>
+     </div>
+    </section>
+    <script src="../scripts/timeTrackerRenderer.js"></script>
+    <div id="deleteModal" class="modal">
+     <div class="modal-content">
+       <p>Are you sure you want to delete this task?</p>
+       <div class="modal-actions">
+         <button id="confirmDelete">Yes</button>
+         <button id="cancelDelete">Cancel</button>
+       </div>
+     </div>
+   </div>
   </body>
 </html>

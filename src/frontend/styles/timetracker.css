@@ -11,6 +11,7 @@
 :root{
  /* Color Variables */
  --primary-color: #711EDA;
+ --secondary-color: #fafafa;
  --body-color: #E4E9F7 ;
  --text-color: #707070;
  --sidebar-color: #FFF;
@@ -37,6 +38,7 @@ body.dark{
  --sidebar-color: #242526;
  --toggle-color: #FFF;
  --primary-color-light: #3A3B3C;
+ --secondary-color: #292b2c; 
 }
 
 /* ===== Reusable CSS ===== */
@@ -320,9 +322,13 @@ body.dark .switch::before{
  transition: var(--tran-05);
 }
 
+h2 {
+ font-size: 16px;
+}
+
 .home .text{
  font-size: 30px;
- font-weight: 500;
+ font-weight: 300;
  color: var(--text-color);
  padding: 25px 30px;
 }
@@ -331,3 +337,299 @@ body.dark .switch::before{
  left: 110px;
  width: calc(100% - 110px);
 }
+
+header{
+
+}
+
+.time-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  min-width: 500px;
+  width: calc(100% - 20px);
+  margin: auto;
+  background: var(--sidebar-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+  
+}
+
+#task-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input, button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#task-input {
+  flex: 1 1 0%;
+  padding: 0.5rem;
+  background: var(--sidebar-color);
+  color: var(--text-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+#task-input::placeholder {
+  background: var(--sidebar-color);
+  color: var(--text-color);
+}
+
+#task-submit {
+  color: var(--primary-color);
+  background: var(--primary-color-light);
+  font-weight: 300;
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+  transition: var(--tran-04);
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
+#task-submit:hover {
+  color: var(--primary-color);
+  background: var(--sidebar-color);
+}
+
+#task-submit.dark {
+  color: var(--primary-color-light);
+  background: red;
+}
+
+.tasks,
+.complete-tasks {
+  background: var(--secondary-color);
+  border-radius: 6px;
+  height: 40vh;
+  overflow-x: auto;
+  padding: 10px; /* Optional */
+}
+
+.drag-over {
+  background-color: #e0ffe0;
+}
+
+.dragging {
+  opacity: 0.5;
+}
+
+.drag-over {
+  border: 2px dashed #007bff;
+}
+
+.task {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 15px;
+  background: var(--sidebar-color);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+}
+
+.date-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px;
+  background: var(--primary-color-light);
+  font-size: 14px;
+}
+
+.due {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+label,
+.date
+{
+ color: var(--text-color);
+}
+
+
+.start-date,
+.stop-date{
+ color: var(--text-color);
+ background: var(--sidebar-color);
+ padding: 5px;
+}
+
+.task-list {
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-list h2 {
+  color: var(--text-color);
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.task-text {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 300;
+  width: 280px;
+}
+
+.task .content .task-text:not(:read-only) {
+  border-bottom: 1px solid var(--text-color);
+  color: var(--text-color);
+}
+
+.time {
+  margin-right: 50px;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.counter {
+  color: var(--text-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.controls {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px; /* ✅ This adds spacing between buttons */
+}
+
+button {
+  color: var(--text-color);
+  background: var(--sidebar-color);
+  font-size: 1.0rem;
+  font-weight: 300;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  transition: var(--tran-04);
+}
+
+button:hover {
+  color: var(--sidebar-color);
+  background: var(--primary-color);
+}
+
+.done {
+  color: var(--text-color);
+  background: var(--sidebar-color);
+}
+
+.done:hover {
+  background: #00c90d;
+}
+
+.delete {
+  color: var(--sidebar-color);
+  background: #c9000abb;
+}
+
+.delete:hover {
+  background: #c9000a;
+}
+
+button i {
+  font-size: 15px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.modal-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.toast {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: white;
+  background: #333;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slide-in 0.3s forwards;
+}
+
+.toast.success { background: #28a745; }
+.toast.error   { background: #dc3545; }
+
+.fade-out {
+  animation: fade-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+

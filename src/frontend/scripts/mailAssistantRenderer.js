@@ -12,15 +12,33 @@ toggle.addEventListener("click", () => {
   sidebar.classList.toggle("close");
 });
 
-modeSwitch.addEventListener("click", () => {
-  body.classList.toggle("dark");
+// Apply saved theme on page load
+document.addEventListener("DOMContentLoaded", () => {
+  const savedMode = localStorage.getItem("theme");
 
-  if (body.classList.contains("dark")) {
-    modeText.innerText = "Light Mode";
+  if (savedMode === "dark") {
+    body.classList.add("dark");
+    if (modeText) modeText.innerText = "Light Mode";
   } else {
-    modeText.innerText = "Dark Mode";
+    body.classList.remove("dark");
+    if (modeText) modeText.innerText = "Dark Mode";
   }
 });
+
+// Toggle theme + save preference
+if (modeSwitch) {
+  modeSwitch.addEventListener("click", () => {
+    body.classList.toggle("dark");
+
+    if (body.classList.contains("dark")) {
+      if (modeText) modeText.innerText = "Light Mode";
+      localStorage.setItem("theme", "dark");
+    } else {
+      if (modeText) modeText.innerText = "Dark Mode";
+      localStorage.setItem("theme", "light");
+    }
+  });
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   dropdownBtn.addEventListener("click", function (event) {
